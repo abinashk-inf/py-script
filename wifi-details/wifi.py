@@ -17,4 +17,9 @@ ip6=bus.get('.NetworkManager',con.Ip6Config)
 ip6Add=ip6.AddressData
 print(ip6Add)
 
+dev=bus.get('.NetworkManager',nm.GetDevices()[1])
+mac=dev.HwAddress
+print(mac)
+
+
 
